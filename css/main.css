@@ -1,0 +1,169 @@
+/* Pallette:
+"white": #f7f6f4
+"grey": #a3a5a8
+"Orange": #bc4504
+"brown": #401c04
+"black" #02060b
+*/
+
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f6f4;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h5,
+.navbar-brand {
+    font-family: 'Ubuntu',
+    sans-serif;
+}
+
+h3 {
+    padding-top: .95em;
+    color: #401c04;
+    font-size: 2.5rem;
+}
+
+/*********BOOTSTRAP OVERRIDES*********/
+
+
+.jumbotron {
+    padding: 0;
+}
+
+.carousel-inner {
+    max-height: 750px;
+}
+
+.carousel-caption {
+    bottom:65%;
+    top: 35%;
+    padding: 0;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.navbar-dark {
+    background-color: transparent !important;
+}
+
+.navbar-dark.scrolled {
+    background-color: #401c04 !important;
+}
+
+.nav-link {
+    color: #ebe9e6 !important;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: #ebe9e6 !important;
+    border: solid .05rem #fff;
+    
+}
+
+.btn-primary {
+    background-color: rgba(188, 69, 4, 1);
+    border-color: rgba(188, 69, 4, 1);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    /* slightly darker */
+    background-color: rgb(139, 51, 3);
+    border-color: rgb(139, 51, 3);
+}
+
+.btn-primary:focus {
+    /* lighter border color */
+    background-color: rgba(188, 69, 4, 1);
+    border-color: rgba(188, 69, 4, .5);
+    box-shadow: 0 0 0 .2rem rgba(188, 69, 4, .5)
+}
+
+.bg-dark {
+    background-color:#401c04 !important;
+}
+
+/********* HEADER *********/
+
+
+/*********ABOUT SECTION*********/
+#about,
+#classes {
+    padding: 1.5em 0;
+}
+
+
+.about-info {
+    padding: 2.5em 0;
+}
+
+#amy-about-img {
+    max-height: 450px;
+}
+
+
+/*********CLASSES*********/
+.card {
+    height: 100%;
+    margin:1.15em auto;
+    width: 20rem;
+    
+}
+
+.card a {
+    font-size: 1.15em;
+}
+
+
+/*********CONTACT**********/
+#contact {
+    padding: 1.15rem 0 5rem 0;
+}
+
+.form-group {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+}
+
+#contact-text {
+    text-align: center;
+}
+
+/* ADDITIONAL MEDIA QUERIES */
+@media only screen and (min-width: 960px) {
+    h2 {
+        font-size: 4rem;
+    }
+
+    .carousel-inner a {
+        font-size: 1.5rem;
+    }
+}
